@@ -1,13 +1,16 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import './index.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./index.css";
 
-import Home from './routes/Home'
-import Countdown from './routes/Counterdown'
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { CountdownProvider } from './context/CountdownContext'
+// pages
+import Home from "./routes/Home";
+import Countdown from "./routes/Countdown";
+
+// Context
+import { CountdownProvider } from "./context/CountdownContext";
 
 const router = createBrowserRouter([
   {
@@ -26,10 +29,10 @@ const router = createBrowserRouter([
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <CountdownProvider>
-        <RouterProvider router={router}/>
+      <RouterProvider router={router} />
     </CountdownProvider>
-  </React.StrictMode>,
-)
+  </React.StrictMode>
+);
