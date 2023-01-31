@@ -17,7 +17,7 @@
 ## Resultado 💻
  <hr>
  <div style="display: flex;">
-    <img src="https://imgur.com/i7BtVdX" alt="Print App">
+    <img src="https://i.imgur.com/i7BtVdX.png" alt="Print App">
  </div>
 
  <hr>
